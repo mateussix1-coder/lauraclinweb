@@ -1,0 +1,25 @@
+INSTRUÇÕES — CORRIGIR ERRO "INSTALANDO DEPENDÊNCIAS" OU 404 NA VERCEL
+
+1. No GitHub, apague os arquivos antigos:
+   - package.json
+   - package-lock.json
+   - node_modules, se aparecer
+   - pastas antigas com index.html dentro
+
+2. Suba SOMENTE estes arquivos na raiz do repositório:
+   - index.html
+   - vercel.json
+   - laura-clin-contato.vcf
+   - README.md
+
+3. Na Vercel:
+   - Project > Settings > Build & Development Settings
+   - Framework Preset: Other
+   - Build Command: deixe vazio
+   - Output Directory: deixe vazio
+
+4. Depois:
+   - Deployments > três pontinhos > Redeploy
+   - Marque "Use existing Build Cache" DESLIGADO, se aparecer.
+
+O index.html precisa estar na primeira tela do repositório, e não dentro de uma pasta.
